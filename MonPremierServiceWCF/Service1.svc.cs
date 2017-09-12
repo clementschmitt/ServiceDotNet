@@ -32,14 +32,23 @@ namespace MonPremierServiceWCF
 
         public float GetPrice(string id)
         {
+            System.Threading.Thread.Sleep(10000);
             switch (id)
             {
-                case "Mario et lapins crétins":
+                case "Mario et les lapins Crétins":
                     return 49.99f;
                 case "PS4":
                     return 399.99f;
-                case "Assasins Creed Black Flag":
+                case "Assasins Creed":
                     return 29.99f;
+                case "Far Cry 5":
+                    return 69.99f;
+                case "Destiny 2":
+                    return 59.99f;
+                case "OverWatch":
+                    return 39.99f;
+                case "League of Legends":
+                    return 0;
                 default:
                     return 99999999999999999.999f;
             }
